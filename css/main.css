@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #5fcb71;
-  --secondary-color: #fafafa;
+  --secondary-color: #f4f4f4;
   --dark-color: #333;
   --light-color: #fff;
   --width: 1140px;
@@ -109,26 +109,33 @@ hr {
 .nav-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
-}
-
-.nav-list li a {
-  color: var(--light-color);
-  text-decoration: none;
 }
 
 .nav-list li {
   margin-bottom: 15px;
 }
 
-.nav-list li i {
-  margin-right: 10px;
-  font-size: 1rem;
+.nav-list li a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0.75;
 }
 
-.current {
+.nav-list li a:hover,
+.nav-list li i:hover {
   color: var(--dark-color);
+  opacity: 1;
+}
+
+.nav-list li i.current,
+.nav-list li a.current {
+  color: var(--dark-color);
+}
+
+.nav-list li i {
+  margin-right: 6px;
 }
 
 .btn-aside {
@@ -142,5 +149,85 @@ main {
   position: absolute;
   top: 0;
   left: 280px;
-  padding: 30px;
+  background-color: var(--secondary-color);
+}
+
+header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-top: 0;
+  color: #555;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header input {
+  display: block;
+  width: 40%;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  opacity: 0.7;
+  text-align: left;
+}
+
+header .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Posts */
+
+.posts {
+  background-color: var(--light-color);
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.post {
+  display: flex;
+  gap: 30px;
+}
+
+.post img {
+  max-width: 200px;
+}
+
+.post div {
+  width: 100%;
+  text-align: left;
+}
+
+.post h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.post .undertext {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 0;
 }
