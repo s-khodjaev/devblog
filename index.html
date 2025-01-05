@@ -3,7 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon.ico"
+      type="image/
+    x-icon"
+    />
+    <title>Developer Blog</title>
   </head>
-  <body></body>
+  <body>
+    <aside class="sidebar">
+      <div class="info">
+        <h2>Anthony's Blog</h2>
+        <img src="img/profile.png" alt="" />
+        <p>
+          Hi, my name is Anthony Doe. Briefly introduce yourself here. You can
+          also provide a link to the about page.
+          <a href="about.html">Find out more about me</a>
+        </p>
+        <div class="socials">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-reddit"></i>
+          <i class="fa-brands fa-stack-overflow"></i>
+          <i class="fa-brands fa-codepen"></i>
+        </div>
+        <hr />
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><i class="fas fa-home"></i><a href="index.html">Blog Home</a></li>
+          <li>
+            <i class="fas fa-bookmark"></i><a href="post.html">Blog post</a>
+          </li>
+          <li><i class="fas fa-user"></i><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-aside">Get in Touch</a>
+    </aside>
+    <main>
+      <header>
+        <h1>DevBlog - A Blog Template Made For Developers</h1>
+        <p>
+          Welcome to my blog. Subscribe and get my latest blog post in your
+          inbox.
+        </p>
+        <form>
+          <input type="email" name="email" />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </header>
+      <div class="posts">
+        <!-- Post 1 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-1.jpg" alt="" />
+          <div>
+            <h4>Top 3 JavaScript Frameworks</h4>
+            <p>Published 2 days ago * 5 min read * 8 comments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-2.jpg" alt="" />
+          <div>
+            <h4>About Remote Working</h4>
+            <p>Published 3 months ago * 3 min read * 26 comments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-3.jpg" alt="" />
+          <div>
+            <h4>A Guide to Becoming a Full-Stack Developer</h4>
+            <p>Published 2 months ago * 15 min read * 3 comments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-4.jpg" alt="" />
+          <div>
+            <h4>High Performance JavaScript</h4>
+            <p>Published 1 months ago * 8 min read * 12 comments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-5.jpg" alt="" />
+          <div>
+            <h4>Learn React in 24 Hours</h4>
+            <p>Published 2 monthss ago * 10 min read * 23 comments</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Post 6 -->
+        <div class="post">
+          <img src="img/blog/blog-post-thumb-6.jpg" alt="" />
+          <div>
+            <h4>How to Build Desktop Apps with HTML, CSS and JavaScript</h4>
+            <p>Published 3 months ago * 2 min read * 1 comment</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic
+              quaerat quia vero, quasi provident beatae? Asperiores labore
+              fugiat animi incidunt voluptatum veritatis accusamus voluptatem
+              odio minus consequatur. Ratione, aspernatur...
+            </p>
+            <a href="#" class="link"
+              >Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-block"
+        >Next <i class="fas fa-arrow-right"></i
+      ></a>
+    </main>
+  </body>
 </html>
