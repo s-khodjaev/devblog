@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon.ico"
+      type="image/
+    x-icon"
+    />
+    <title>Blog Post</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="info">
+        <h2>Anthony's Blog</h2>
+        <img src="img/profile.png" alt="" />
+        <p>
+          Hi, my name is Anthony Doe. Briefly introduce yourself here. You can
+          also provide a link to the about page.
+          <a href="about.html" class="aside-link">Find out more about me</a>
+        </p>
+        <div class="socials">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-reddit"></i>
+          <i class="fab fa-stack-overflow"></i>
+          <i class="fab fa-codepen"></i>
+        </div>
+        <hr />
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-link current">
+            <a href="index.html" class="current"
+              ><i class="fas fa-home current"></i>Blog Home</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="post.html"><i class="fas fa-bookmark"></i> Blog Post</a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-aside">Get in Touch</a>
+    </aside>
+    <main>
+      <div class="blog-container">
+        <!-- Intro -->
+        <section class="intro">
+          <h2>Why Every Developer Should Have A Blog</h2>
+          <p class="undertext">
+            Published 2 days ago * 5 min read * 4 comments
+          </p>
+          <img src="img/blog/blog-post-banner.jpg" alt="" />
+          <p class="undertext">
+            Image Credit:
+            <a href="https://made4dev.com/?ref=devblog"
+              >made4dev.com (Premium Programming T-shirts)</a
+            >
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+            semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae, eleifend ac, enim.
+          </p>
+        </section>
+
+        <!-- CodeBlock -->
+        <section class="codeblock">
+          <h2>Code Block Example</h2>
+          <p>
+            You can get more info at
+            <span class="link">https://highlightjs.org/</span>. Lorem ipsum
+            dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+            massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+            consequat vitae, eleifend ac, enim.
+          </p>
+          <pre>
+            <code>
+              function $initHighlight(block, cls) {
+                try {
+                  if (cls.search(/\bno\-highlight\b/) != -1)
+                    return process(block, true, 0x0F) + 
+                ` class="${cls}"`; 
+              } catch (e) {
+                /* handle exception */ 
+              }
+                for (var i = 0 / 2; i < classes.length; i++) {
+                  if (checkCondition(classes[i]) === undefined)
+                    console.log('undefined');
+                }
+              }
+              export $initHighlight;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Typography -->
+        <section class="typography">
+          <h2>Typography</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+          <h3>Bullet Points:</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <ol>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ol>
+
+          <h3>Quote Example:</h3>
+          <blockquote>
+            You might not think that programmers are artists, but programming is
+            an extremely creative profession. It's logic-based creativity.
+            <br />
+            - John Romero
+          </blockquote>
+
+          <h3>Table Example</h3>
+          <table>
+            <tr>
+              <th>#</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>Handle</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </table>
+
+          <h3>Embed A Tweet:</h3>
+          <div>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                1969:<br />-what&#39;re you doing with that 2KB of RAM?<br />-sending
+                people to the moon<br /><br />2017:<br />-what&#39;re you doing
+                with that 1.5GB of RAM?<br />-running Slack
+              </p>
+              &mdash; I Am Devloper (@iamdevloper)
+              <a
+                href="https://twitter.com/iamdevloper/status/926458505355235328?ref_src=twsrc%5Etfw"
+                >November 3, 2017</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+
+          <h3>Video Example</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+          </p>
+          <div>
+            <iframe
+              width="796"
+              height="448"
+              src="https://www.youtube.com/embed/1nxSE0R27Gg"
+              title="Getting Started with Bootstrap 5 for Beginners - Crash Course"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <p>
+          Design with ❤️ by
+          <a href="https://themes.3rdwavemedia.com/" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
