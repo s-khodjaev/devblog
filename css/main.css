@@ -344,6 +344,22 @@ tr:nth-child(even) {
   background-color: #eee;
 }
 
+/* Buttons */
+
+.buttons a {
+  display: inline-block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Promo */
+
+.promo {
+  background-color: var(--secondary-color);
+}
+
+/* About  */
+
 /* Footer */
 
 footer {
